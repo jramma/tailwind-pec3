@@ -49,8 +49,8 @@
   </head>
   <body>
     <include src="./views/header.html"></include>
-    <main class="home-main">
-      <section class="wrap">
+    <main class="bg-primary flex flex-col w-full">
+      <section class="flex flex-wrap container gap-6 pt-10">
         <include src="./components/post.html"
           >{ "title": "Sobre el Concurso", "paragraph1": "El Concurso de
           Ciberseguridad es un evento anual diseñado para estudiantes y
@@ -73,7 +73,8 @@
           "time": "10:00", "activity": "Talleres técnicos" }, "agenda3": {
           "time": "13:00", "activity": "Almuerzo" }, "agenda4": { "time":
           "15:00", "activity": "Competencia principal" }, "agenda5": { "time":
-          "18:00", "activity": "Clausura y premiación"  }, "credits": "false" }</include
+          "18:00", "activity": "Clausura y premiación" }, "credits": "false"
+          }</include
         >
         <include src="./components/post.html"
           >{ "title": "GrapheneOS: Código Fuente y Seguridad", "paragraph1":
@@ -111,7 +112,6 @@
         >
       </section>
       <include src="./components/made.html"></include>
-
     </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
