@@ -1,33 +1,39 @@
-<footer class="footer">
+<footer class="border-t-4 border-solid border-black flex flex-col items-center overflow-hidden">
   <!-- NAV -->
-  <div class="footer-container">
+  <div
+    class="container flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-center py-4"
+  >
     <!-- Logo -->
-    <div class="footer-logo">
+    <div class="font-righteous text-xl">
       <a href="/" aria-label="Inicio - Ciber Security">CSecurity</a>
     </div>
     <nav class="nav">
-      <ul class="footer-menu">
-        <li><a href="/" class="header-link">Home</a></li>
-        <li><a href="/two" class="header-link">Speakers</a></li>
-        <li><a href="/three" class="header-link">Blog</a></li>
-        <li><a href="/four" class="header-link">Gallery</a></li>
+      <ul class="flex items-center gap-6">
+        <li><a href="/">Home</a></li>
+        <li><a href="/two">Speakers</a></li>
+        <li><a href="/three">Blog</a></li>
+        <li><a href="/four">Gallery</a></li>
       </ul>
     </nav>
-    <div class="icons">
+    <div class="text-3xl">
       <a href="https://github.com/jramma" target="_blank" aria-label="Facebook">
         <i class="fa fa-github"></i>
       </a>
       <a href="https://jramma.com" target="_blank" aria-label="jramma">
         <i class="fa fa-globe"></i>
       </a>
-      <a href="https://linkedin.com/in/jramma" target="_blank" aria-label="LinkedIn">
+      <a
+        href="https://linkedin.com/in/jramma"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
         <i class="fa fa-linkedin"></i>
       </a>
     </div>
   </div>
   <!-- SECTION BLUE -->
-  <section class="blue">
-    <div class="footer-blue">
+  <section class="bg-uoc text-white py-10 flex justify-center container">
+    <div class=" flex flex-col md:flex-row gap-6">
       <picture>
         <source
           srcset="./assets/images/logo.png?as=webp&width=350"
@@ -36,10 +42,10 @@
         <img
           src="./assets/images/logo.png?width=350"
           alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
+          class="bg-white"
         />
       </picture>
-      <p>
+      <p class="max-w-80">
         This wireframe has been created exclusively for its use within the “HTML
         and CSS Tools II” course at the UOC’s Master Program in Website and Web
         App Development. Its reproduction and other uses are not authorized.
