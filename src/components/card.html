@@ -1,18 +1,15 @@
-<div class="card speaker">
-  <picture class="card-img-top">
-    <source
-      srcset="{{image}}"
-      type="image/webp"
-    />
+<div class="bg-white p-4 flex flex-col gap-8 card">
+  <picture class="">
+    <source class="rounded-2xl" srcset="{{image}}" type="image/webp" />
     <img
       src="{{image}}"
       alt="Universitat Oberta de Catalunya"
-      class="img-fluid"
+      class="rounded-2xl"
     />
   </picture>
-  <div class="card-body">
-    <h3 class="card-title">{{name}}</h3>
-    <p class="card-subtitle text-muted">{{title}}</p>
+  <div class="text-center gap-2 flex flex-col">
+    <h3 class="font-righteous text-xl">{{name}}</h3>
+    <p class="text-gray-600">{{title}}</p>
     <p class="card-text">{{description}}</p>
   </div>
 </div>

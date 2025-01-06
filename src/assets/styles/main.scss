@@ -9,11 +9,9 @@ a {
 .social-icon {
   @apply bg-white px-5 py-3 rounded-md border-solid border-2 border-black shadow-card hover:shadow-hover;
 }
-.card
-{
-  @apply   rounded-md border-solid border-2 border-black shadow-card hover:shadow-hover;
+.card {
+  @apply rounded-md border-solid border-2 border-black shadow-card hover:shadow-hover transition-all ease-in-out duration-300;
 }
-.badge
-{
+.badge {
   @apply rounded-md px-3 font-semibold text-sm py-1;
 }

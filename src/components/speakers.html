@@ -1,6 +1,6 @@
-<section class="speakers">
-  <h2>Ponentes</h2>
-  <div class="speakers-grid">
+<section class="flex flex-col container gap-10 py-10">
+  <h2 class="font-righteous text-3xl">Ponentes</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     <include src="components/card.html">
       { "image": "./assets/images/head1.webp", "name": "Dr. Ana García",
       "title": "Experta en Ciberseguridad", "description": "Ana es una
@@ -43,7 +43,7 @@
       respuesta a incidentes." }
     </include>
   </div>
-  <div class="speakers-footer">
+  <div class="flex justify-center">
     <include src="components/button.html">{"text":"Subribete al boletín"}</include>
   </div>
 </section>
