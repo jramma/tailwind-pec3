@@ -1,33 +1,44 @@
-<header class="">
-  <div class="flex flex-row justify-between items-center p-4 bg-background border-b-4 border-solid border-black">
+<header class="flex justify-center border-b-4 border-solid border-black">
+  <div
+    class="container flex flex-row justify-between items-center p-4 bg-background"
+  >
     <!-- Logo -->
-    <div class="">
+    <div class="md:text-5xl text-xl font-righteous">
       <a href="/" aria-label="Inicio - Ciber Security">CSecurity</a>
     </div>
 
     <!-- Menú de navegación -->
-    <nav class="" aria-label="Menú principal">
-      <ul class="header-menu">
-        <li><a href="two.html" class="header-link">Speakers</a></li>
-        <li><a href="three.html" class="header-link">Blog</a></li>
-        <li><a href="four.html" class="header-link">Gallery</a></li>
-
-        <!-- Redes sociales -->
-        <li class="header-social">
-          <a href="https://github.com/jramma" target="_blank" aria-label="Facebook">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
-        <li class="header-social">
-          <a href="https://jramma.com" target="_blank" aria-label="Jramma">
-            <i class="fa fa-globe"></i>
-          </a>
-        </li>
-        <li class="header-social">
-          <a href="https://linkedin.com/in/jramma" target="_blank" aria-label="LinkedIn">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
+    <nav class="flex items-center gap-6" aria-label="Menú principal">
+      <ul class="flex items-center gap-6">
+        <li><a href="two.html">Speakers</a></li>
+        <li><a href="three.html">Blog</a></li>
+        <li><a href="four.html">Gallery</a></li>
+        <div class="hidden md:flex items-center gap-6 text-2xl">
+          <!-- Redes sociales -->
+          <li>
+            <a
+              href="https://github.com/jramma"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://jramma.com" target="_blank" aria-label="Jramma">
+              <i class="fa fa-globe"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/jramma"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </div>
       </ul>
     </nav>
   </div>
