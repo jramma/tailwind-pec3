@@ -1,0 +1,18 @@
+// Scaffolding y estilos base
+@use "base/reset";
+@use "base/typography";
+
+// Componentes personalizados
+@use "layouts/header";
+@use "layouts/footer";
+
+// Estilos específicos de páginas
+@use "pages/home";
+@use "pages/global";
+@use "pages/two";
+@use "pages/three";
+@use "pages/four";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

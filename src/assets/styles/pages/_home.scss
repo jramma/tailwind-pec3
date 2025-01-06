@@ -1,0 +1,201 @@
+@use "../abstracts/index" as abstracts;
+@use "sass:color";
+
+.home-main {
+  color: abstracts.$black;
+  padding: abstracts.$spacing-unit;
+
+  @include abstracts.container;
+}
+
+/*
+  ######################################################################################
+  SECCION SOCIALS
+  ######################################################################################
+*/
+.socials {
+  display: none;
+
+  @media (width <= 768px) {
+    display: block;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    @include abstracts.card;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: abstracts.$white;
+
+    &:hover {
+      transform: scale(abstracts.$card-hover-scale);
+      box-shadow: calc(abstracts.$card-shadow-offset * 1.5)
+        calc(abstracts.$card-shadow-offset * 1.5) abstracts.$card-shadow-blur
+        abstracts.$card-shadow-color;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: abstracts.$green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: color.adjust(abstracts.$green, $lightness: -10%);
+    }
+  }
+
+  &-icon {
+    padding: 1.5rem;
+    width: 2rem;
+  }
+
+  i {
+    font-size: 3rem;
+  }
+}
+
+/*
+  ######################################################################################
+  SECCION GRID
+  ######################################################################################
+*/
+.poster-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: start;
+
+  @supports not (display: grid) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .poster-grid-title {
+    grid-column: span 12;
+    text-decoration: underline;
+    font-family: abstracts.$font-family-righteous;
+    font-size: 2rem;
+    width: 100%;
+    display: none;
+
+    @media (width <= 768px) {
+      display: block;
+    }
+  }
+
+  &-main {
+    max-width: 100%;
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    @supports not (display: grid) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .box {
+      margin-bottom: auto;
+      margin-right: 2rem;
+
+      @media (width <= 768px) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        line-height: 1.2;
+        font-family: abstracts.$font-family-righteous;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.green-card {
+  @include abstracts.card;
+
+  grid-column: span 4;
+  background-color: abstracts.$secondary;
+
+  @media (width <= 768px) {
+    grid-column: span 12;
+  }
+}
+
+.transp-card {
+  @include abstracts.card;
+
+  grid-column: span 4;
+  background-color: transparent;
+
+  @media (width <= 768px) {
+    grid-column: span 12;
+  }
+}
+
+.cian-card {
+  margin-right: 0;
+  grid-column: 10 / span 3;
+  background-color: abstracts.$terciary ;
+
+  @include abstracts.card;
+
+  @media (width <= 768px) {
+    grid-column: span 12;
+  }
+}
+
+/*
+  ######################################################################################
+  SECCION Made with love
+  ######################################################################################
+*/
+.made {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: abstracts.$black;
+  color: abstracts.$white;
+  font-size: 1rem;
+
+  a {
+    color: abstracts.$secondary;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: abstracts.$font-family-righteous;
+
+    &:hover {
+      color: abstracts.$secondary;
+    }
+  }
+
+  i {
+    font-size: 1.5rem;
+    color: abstracts.$terciary;
+  }
+}
