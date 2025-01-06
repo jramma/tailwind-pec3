@@ -10,15 +10,18 @@
  * Write any other JavaScript below
  */
 
-+( function() {
++(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("imageModal");
   const modalImage = document.getElementById("modalImage");
   const modalCaption = document.getElementById("modalCaption");
   const closeModal = document.getElementById("closeModal");
+  const toggleButton = document.getElementById("toggleButton");
+  const collapseElement = document.getElementById("collapseWidthExample");
 
   // Selecciona todas las imágenes de la galería
   const galleryImages = document.querySelectorAll(".gallery-img");
@@ -41,5 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.target === modal) {
       modal.classList.remove("show");
     }
+  });
+
+  // Función para el colapso
+  toggleButton.addEventListener("click", () => {
+    collapseElement.classList.toggle("hidden");
+    const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
+    toggleButton.setAttribute("aria-expanded", !isExpanded);
   });
 });

@@ -12,7 +12,6 @@ module.exports = {
         white: "#f1f1f1",
         black: "#0f0f0f",
         text: "#000000",
-        green: "#10b981",
         uoc: "#00046A",
         border: "#000000",
       },
@@ -28,10 +27,25 @@ module.exports = {
         righteous: ["Righteous", "sans-serif"],
       },
       boxShadow: {
-        card: "7px 0 0 rgb(0 0 0 / 100%)",
+        card: "7px 7px rgb(0 0 0 / 100%)",
+        hover: "11px 11px #000",
       },
       scale: {
         "card-hover": "1.05",
+      },
+      container: {
+        center: true,
+        padding: "1rem",
+        screens: {
+          sm: "540px",
+          md: "720px",
+          lg: "960px",
+          xl: "1140px",
+          "2xl": "1320px",
+        },
+      },
+      fontSize: {
+        sm: ["0.8rem", { lineHeight: "1rem" }], // 14px
       },
     },
   },

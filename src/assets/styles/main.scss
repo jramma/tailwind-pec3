@@ -6,18 +6,14 @@ a {
   @apply hover:text-secondary transition ease-in-out duration-300;
 }
 
-/* // Scaffolding y estilos base
-// @use "base/reset";
-// @use "base/typography";
-
-// Componentes personalizados
-// @use "layouts/header";
-// @use "layouts/footer";
-
-// Estilos específicos de páginas
-// @use "pages/home";
-// @use "pages/global";
-// @use "pages/two";
-// @use "pages/three";
-// @use "pages/four";
- */
+.social-icon {
+  @apply bg-white px-5 py-3 rounded-md border-solid border-2 border-black shadow-card hover:shadow-hover;
+}
+.card
+{
+  @apply   rounded-md border-solid border-2 border-black shadow-card hover:shadow-hover;
+}
+.badge
+{
+  @apply rounded-md px-3 font-semibold text-sm py-1;
+}
