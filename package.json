@@ -5,7 +5,7 @@
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
     "parcel:serve": "nodemon --watch ./src --exec \"parcel serve src/index.html -p 8123\"",
-    "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
+    "parcel:build": "parcel build",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
@@ -41,7 +41,7 @@
     "@parcel/transformer-webmanifest": "^2.13.2",
     "autoprefixer": "^10.4.20",
     "npm-run-all": "^4.1.5",
-    "parcel": "^2.12.0",
+    "parcel": "^2.13.3",
     "postcss": "^8.4.49",
     "postcss-preset-env": "^9.1.1",
     "posthtml": "^0.16.6",
