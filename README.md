@@ -1,5 +1,8 @@
 # 🌟 Proyecto Tailwind CSS
 
+- **GitHub**: [https://github.com/jramma/tailwind-pec3](https://github.com/jramma/tailwind-pec3)
+- **URL**: [https://pec3htmlcss2.netlify.app/](https://pec3htmlcss2.netlify.app/)
+
 Este proyecto es una versión del repositorio [jornadas-seguridad-informatica](https://github.com/jramma/jornadas-seguridad-informatica) pero utilizando Tailwind CSS.
 
 ## 📁 Estructura del Proyecto
